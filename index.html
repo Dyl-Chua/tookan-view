@@ -73,6 +73,7 @@
 
     request.send(JSON.stringify(body));
 
+    app.use(express.urlencoded({extended:true}));
 
 </script>
 
