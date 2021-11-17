@@ -48,8 +48,8 @@
             countnumtask = json_responsegat.data["length"];
 
             for (let i = 0; i < countnumtask; i++) {
-                var para = document.createElement("li" + i);
-                para.innerHTML = json_responsegat.data[i].customer_username + " | " + json_responsegat.data[i].job_id + " | " + json_responsegat.data[i].order_id + " | " + json_responsegat.data[i].customer_username + " | " + json_responsegat.data[i].customer_phone + " | " + json_responsegat.data[i].job_address + " | " + json_responsegat.data[i].job_description + " | " + "<br>" + "<br>";
+                var list = document.createElement("li" + i);
+                list.innerHTML = json_responsegat.data[i].customer_username + " | " + json_responsegat.data[i].job_id + " | " + json_responsegat.data[i].order_id + " | " + json_responsegat.data[i].customer_username + " | " + json_responsegat.data[i].customer_phone + " | " + json_responsegat.data[i].job_address + " | " + json_responsegat.data[i].job_description + " | " + "<br>" + "<br>";
                 document.getElementById("tasklist").appendChild(para);
             }
         }
